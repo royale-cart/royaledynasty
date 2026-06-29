@@ -1,12 +1,38 @@
 // Boutique Style Product Data
 const products = [
-    { id: 1, name: "Signature Tote Bag", category: "Bags", desc: "Elegant and spacious tote bag crafted for everyday luxury.", img: "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&w=600&q=80" },
-    { id: 2, name: "Blush Silk Scarf", category: "Accessories", desc: "100% pure silk scarf with delicate hand-stitched edging.", img: "https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=600&q=80" },
-    { id: 3, name: "Rose Gold Chrono", category: "Watches", desc: "Minimalist timepiece featuring a rose gold mesh band.", img: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=600&q=80" },
-    { id: 4, name: "Velvet Matte Lipstick", category: "Beauty", desc: "Long-lasting rich pigment with a comfortable matte finish.", img: "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=600&q=80" },
-    { id: 5, name: "Pearl Drop Earrings", category: "Jewelry", desc: "Classic freshwater pearls set in 18k white gold.", img: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80" }
+    { 
+        id: 1, 
+        name: "Mielle Rosemary Mint Oil", 
+        category: "Hair Care", 
+        desc: "Transform your scalp health with this organic elixir designed for stronger, fuller, and lustrous hair.", 
+        img: "images/mieele.jpg" 
+    },
+    // --------------------------------------------------------
+    { 
+        id: 2, 
+        name: "Mielle Mint Straightening Shampoo", 
+        category: "Hair Care", 
+        desc: "Achieve the ultimate sleek look; a professional frizz-defying formula that leaves hair silky and weightless.", 
+        img: "images/mshampoo.jpg" 
+    },
+    // --------------------------------------------------------
+    { 
+        id: 3, 
+        name: "Mielle Pomegranate & Honey Smoothie", 
+        category: "Hair Care", 
+        desc: "Your curls deserve perfection. A deeply hydrating cream that defines, shapes, and radiates natural beauty.", 
+        img: "images/pinkmieele.jpg" 
+    },
+    // --------------------------------------------------------
+    { 
+        id: 4, 
+        name: "Mielle Intensive Hair Mask", 
+        category: "Hair Care", 
+        desc: "Indulge in a luxurious rescue treatment that repairs deep damage, unveiling soft and revitalized hair.", 
+        img: "images/mieelemask.jpg" 
+    }
+    // --------------------------------------------------------
 ];
-
 const whatsappNumber = "923295618970"; 
 
 const productGrid = document.getElementById('product-grid');
