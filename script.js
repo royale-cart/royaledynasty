@@ -1,57 +1,106 @@
 const products = [
-    { id: 1, name: "Mieele Mint Oil ", category: "hair", image: "images/mieele.jpg" },
-    { id: 2, name: "Mieele Mint Straightening Shampoo", category: "hair", image: "images/mshampoo.jpg" },
-    { id: 3, name: "Mielle Pomegranate & Honey Curl Smoothie", category: "hair", image: "images/pinkmieele.jpg" },
-    { id: 4, name: "Mieele Hair Mask", category: "hair", image: "images/mieelemask.jpg" },
-    { id: 5, name: "Daily Styling creme", category: "hair", image: "images/styling.jpg" },
-    { id: 6, name: "Auna Cleanser", category: "skincare", image: "images/cleanser.jpg" },
-    { id: 7, name: "Deep Cleansing Foam", category: "skincare", image: "images/cleansingfoam.jpg" },
-    { id: 8, name: "Auna Milky Toner", category: "skincare", image: "images/milkytoner.jpg" },
-    { id: 9, name: "Anua Niacinamide 10 + TXA 4 Serum", category: "skincare", image: "images/aunaserum.jpg" },
-    { id: 10, name: "Auna Soothing Cleanser", category: "skincare", image: "images/soothing.jpg" },
-    { id: 11, name: "Medicube Exosome Ampoule Serum", category: "skincare", image: "images/medicubeserum.jpg" },
-    { id: 12, name: "Medicube Kojic Acid Turmeric", category: "skincare", image: "images/acid.jpg" },
-    { id: 13, name: "Medicube Colagen Night Wrapping Mask", category: "skincare", image: "images/night.jpg" },
-    { id: 14, name: "Medicube Zero Pore Serum", category: "skincare", image: "images/zero.jpg" },
-    { id: 15, name: "Medicube PDRN Pink Peptide Serum", category: "skincare", image: "images/pdrn.jpg" },
-    { id: 16, name: "Bio Dance Facemask", category: "skincare", image: "images/biodance.jpg" },
-    { id: 17, name: "Centella Poremizing Deep Cleansing Foam", category: "skincare", image: "images/centellafoam.jpg" },
-    { id: 18, name: "Centella Cleanser", category: "skincare", image: "images/cleansercen.jpg" }, 
-    { id: 19, name: "Madagascar Centella Ampoule", skincare: "drones", image: "images/ampoule.jpg" },
-    { id: 20, name: "Pink Clay Stick Mask", category: "skincare", image: "images/stick.jpg" },
-    { id: 21, name: "Centella Serum", category: "skincare", image: "images/cserum.jpg" },
-    { id: 22, name: "La Roche-Posay Repairing Balm", category: "skincare", image: "images/reapir.jpg" },
-    { id: 23, name: "La Roche-Posay Pure Vitamin C12 Serum", category: "skincare", image: "images/c12.jpg" },
-    { id: 24, name: "La Roche-Posay Toleriane Hydrating Gentle Cleanser", category: "skincare", image: "images/generalcleanser.jpg" },
-    { id: 25, name: "La Roche-Posay Anthelios Facial Sunscreen", category: "skincare", image: "images/facial.jpg" },
-    { id: 26, name: "La Roche-Posay Pure Vitamin C10", category: "skincare", image: "images/c10.jpg" },
-    { id: 27, name: "La Roche-Posay Foaming Gel Cleanser", category: "skincare", image: "images/gelpoche.jpg" },
-    { id: 28, name: "Vichy Liftactiv Specialist B3 Serum", category: "skincare", image: "images/b3serum.jpg" },
-    { id: 29, name: "Vichy Neovadiol Meno 5 Bi-Serum", category: "skincare", image: "images/meno5.jpg" },
-    { id: 30, name: "Vichy LiftActiv Pure Vitamin C Brightening", category: "skincare", image: "images/vc16.jpg" },
-    { id: 31, name: "Vichy Liftactiv Retinol Specialist Deep Wrinkles Serum", category: "skincare", image: "images/wrinkle.jpg" },
-    { id: 32, name: "L'Oréal Paris True Match Super-Blendable Foundation", category: "makeup", image: "images/foundation.jpg" },
-    { id: 33, name: "L'Oréal Paris Powder Foundation", category: "makeup", image: "images/powder.jpg" },
-    { id: 34, name: "L'Oréal Paris Mattee Blush", category: "makeup", image: "images/blush.jpg" },
-    { id: 35, name: "Sheglam Good Grip Hydrating Primer", category: "makeup", image: "images/primer.jpg" },
-    { id: 36, name: "SHEGLAM Matte Foundation", category: "makeup", image: "images/foundationglam.jpg" },
-    { id: 37, name: "CeraVe Hydrating Mineral Sunscreen", category: "skincare", image: "images/sunscreenc.jpg" },
-    { id: 38, name: "CeraVe Foaming Facial Cleanser", category: "skincare", image: "images/foaming c.jpg" },
-    { id: 39, name: "CeraVe Hydrating Cleanser", category: "skincare", image: "images/hydratec.jpg" },
-    { id: 39, name: "CeraVe Moisturizing Cream", category: "skincare", image: "images/mc.jpg" },
-    { id: 40, name: "Cetaphil Sun SPF 50+ Light Gel", category: "skincare", image: "images/cetagel.jpg" },
-    { id: 41, name: "Cetaphil Moisturizing Cream jar", category: "skincare", image: "images/cjar.jpg" },
-    { id: 42, name: "Rare Beauty Blush", category: "makeup", image: "images/rblush.jpg" },
-    { id: 43, name: "Essence Lengthening & Volume Mascara", category: "makeup", image: "images/mascara.jpg" },
-    { id: 44, name: "Gluta-Hya Dewy Radiance Serum Burst Lotion", category: "skincare", image: "images/lotion.jpg" },
-    { id: 45, name: "Gluta-Hya Flawless Glow Serum-in-Lotion", category: "skincare", image: "images/l2.jpg" },
-    { id: 46, name: "Dior Backstage Glow Face Palette", category: "makeup", image: "images/dior.jpg" },
-    { id: 47, name: "Dior Backstage Rosy Glow powder blush", category: "makeup", image: "images/dblush.jpg" },
-    { id: 48, name: "NARS Light Reflecting Foundation", category: "makeup", image: "images/narsf.jpg" },
-    { id: 49, name: "Celimax Retinal Shot Tightening Booster", category: "skincare", image: "images/celimax.jpg" },
-    { id: 50, name: "Neutrogena Ultra Sheer Dry-Touch Sunblock", category: "skincare", image: "images/dry.jpg" },
+    { id: 1, name: "Mielle Mint Oil", category: "hair", desc: "Promotes thick, healthy growth.", img: "images/mieele.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 2, name: "Mielle Mint Straightening Shampoo", category: "hair", desc: "Sleek, frizz-free, smooth finish.", img: "images/mshampoo.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 3, name: "Mielle Pomegranate & Honey Smoothie", category: "hair", desc: "Perfectly defined, hydrated curls.", img: "images/pinkmieele.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 4, name: "Mielle Hair Mask", category: "hair", desc: "Deep repair for damaged hair.", img: "images/mieelemask.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 5, name: "Daily Styling Creme", category: "hair", desc: "Effortless hold and moisture.", img: "images/styling.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 6, name: "Anua Cleanser", category: "skincare", desc: "Gentle daily pore cleansing.", img: "images/cleanser.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 7, name: "Deep Cleansing Foam", category: "skincare", desc: "Deep extraction, fresh finish.", img: "images/cleansingfoam.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 8, name: "Anua Milky Toner", category: "skincare", desc: "Deep hydration, dewy glow.", img: "images/milkytoner.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 9, name: "Anua Niacinamide Serum", category: "skincare", desc: "Brightens dark spots instantly.", img: "images/aunaserum.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 10, name: "Anua Soothing Cleanser", category: "skincare", desc: "Calms redness and irritation.", img: "images/soothing.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 11, name: "Medicube Exosome Ampoule", category: "skincare", desc: "Advanced skin rejuvenation therapy.", img: "images/medicubeserum.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 12, name: "Medicube Kojic Acid Turmeric", category: "skincare", desc: "Potent skin brightening treatment.", img: "images/acid.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 13, name: "Medicube Collagen Mask", category: "skincare", desc: "Overnight firming and lifting.", img: "images/night.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 14, name: "Medicube Zero Pore Serum", category: "skincare", desc: "Visibly shrinks large pores.", img: "images/zero.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 15, name: "Medicube PDRN Peptide Serum", category: "skincare", desc: "Boosts skin elasticity daily.", img: "images/pdrn.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 16, name: "Bio Dance Facemask", category: "skincare", desc: "Deeply moisturizing collagen mask.", img: "images/biodance.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 17, name: "Centella Deep Foam", category: "skincare", desc: "Pore-refining soothing foam.", img: "images/centellafoam.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 18, name: "Centella Cleanser", category: "skincare", desc: "Gentle refreshing daily wash.", img: "images/cleansercen.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 19, name: "Madagascar Centella Ampoule", category: "skincare", desc: "Ultimate soothing barrier care.", img: "images/ampoule.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 20, name: "Pink Clay Stick Mask", category: "skincare", desc: "Quick purifying clay treatment.", img: "images/stick.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 21, name: "Centella Serum", category: "skincare", desc: "Lightweight calming skin serum.", img: "images/cserum.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 22, name: "LRP Repairing Balm", category: "skincare", desc: "Soothes and heals damaged skin.", img: "images/reapir.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 23, name: "LRP Vitamin C12 Serum", category: "skincare", desc: "Radiant anti-aging brightening power.", img: "images/c12.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 24, name: "LRP Gentle Cleanser", category: "skincare", desc: "Hydrating wash for sensitive skin.", img: "images/generalcleanser.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 25, name: "LRP Facial Sunscreen", category: "skincare", desc: "Invisible high-level sun defense.", img: "images/facial.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 26, name: "LRP Vitamin C10 Serum", category: "skincare", desc: "Dullness correcting radiance boost.", img: "images/c10.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 27, name: "LRP Foaming Gel", category: "skincare", desc: "Deep clean for oily skin.", img: "images/gelpoche.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 28, name: "Vichy B3 Serum", category: "skincare", desc: "Targets dark spots, anti-aging.", img: "images/b3serum.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 29, name: "Vichy Meno 5 Serum", category: "skincare", desc: "Targeted care for mature skin.", img: "images/meno5.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 30, name: "Vichy Vitamin C Brightening", category: "skincare", desc: "Intense daily brightening serum.", img: "images/vc16.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 31, name: "Vichy Retinol Serum", category: "skincare", desc: "Deep wrinkle smoothing treatment.", img: "images/wrinkle.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 32, name: "L'Oréal True Match Foundation", category: "makeup", desc: "Perfect skin-matching base.", img: "images/foundation.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 33, name: "L'Oréal Powder Foundation", category: "makeup", desc: "Smooth matte finish coverage.", img: "images/powder.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 34, name: "L'Oréal Matte Blush", category: "makeup", desc: "Natural flushed matte color.", img: "images/blush.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 35, name: "Sheglam Hydrating Primer", category: "makeup", desc: "Flawless makeup-locking base.", img: "images/primer.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 36, name: "SHEGLAM Matte Foundation", category: "makeup", desc: "Full coverage matte foundation.", img: "images/foundationglam.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 37, name: "CeraVe Mineral Sunscreen", category: "skincare", desc: "Gentle mineral sun protection.", img: "images/sunscreenc.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 38, name: "CeraVe Foaming Cleanser", category: "skincare", desc: "Deep cleaning without dryness.", img: "images/foaming c.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 39, name: "CeraVe Hydrating Cleanser", category: "skincare", desc: "Soft, moisture-rich facial wash.", img: "images/hydratec.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 40, name: "CeraVe Moisturizing Cream", category: "skincare", desc: "Long-lasting deep hydration.", img: "images/mc.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 41, name: "Cetaphil SPF 50+ Gel", category: "skincare", desc: "Lightweight high-SPF protection.", img: "images/cetagel.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 42, name: "Cetaphil Moisturizing Cream", category: "skincare", desc: "Essential dry skin relief.", img: "images/cjar.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 43, name: "Rare Beauty Blush", category: "makeup", desc: "Long-lasting high-pigment color.", img: "images/rblush.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 44, name: "Essence Mascara", category: "makeup", desc: "Bold volume, dramatic lashes.", img: "images/mascara.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 45, name: "Gluta-Hya Dewy Lotion", category: "skincare", desc: "Glowing, dewy skin radiance.", img: "images/lotion.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 46, name: "Gluta-Hya Glow Lotion", category: "skincare", desc: "Even-toned, flawless glow.", img: "images/l2.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 47, name: "Dior Glow Face Palette", category: "makeup", desc: "Professional highlight and shimmer.", img: "images/dior.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 48, name: "Dior Rosy Glow Blush", category: "makeup", desc: "Custom color-radiant finish.", img: "images/dblush.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 49, name: "NARS Foundation", category: "makeup", desc: "Radiant, light-reflecting skin.", img: "images/narsf.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 50, name: "Celimax Retinal Booster", category: "skincare", desc: "Firming, anti-aging tightening.", img: "images/celimax.jpg" },
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------
+    { id: 51, name: "Neutrogena Sunblock", category: "skincare", desc: "Ultra-sheer, non-greasy protection.", img: "images/dry.jpg" }
 ];
-
 // -------------------------------------------------------------------------------------------------------------------------------------
 const whatsappNumber = "923295618970"; 
 
